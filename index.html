@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lógica e Arrays — Senac Largo Treze</title>
+  <!-- O CSS (estilo) mora num arquivo separado: -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO da página -->
+  <header class="topo">
+    <h1>Lógica de Programação e Arrays</h1>
+    <p>HTML semântico &middot; CSS &middot; JavaScript &mdash; Senac Largo Treze</p>
+  </header>
+
+  <!-- NAVEGAÇÃO: âncoras para as etapas -->
+  <nav class="menu" aria-label="Etapas da aula">
+    <a href="#variaveis">Variáveis</a>
+    <a href="#arrays">Arrays</a>
+    <a href="#operacoes">Operações</a>
+    <a href="#repeticao">Repetição</a>
+    <a href="#projeto">Projeto</a>
+  </nav>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+
+    <section class="bloco">
+      <p class="aviso">
+        <strong>Como ler esta página:</strong> a estrutura é o <strong>HTML</strong>,
+        a aparência é o <strong>CSS</strong>, e quem faz as caixas de resultado abaixo
+        ganharem texto é o <strong>JavaScript</strong> — que vamos escrever juntos.
+        Abra o console com <kbd>F12</kbd> para acompanhar.
+      </p>
+    </section>
+
+    <!-- ETAPA: VARIÁVEIS -->
+    <section class="bloco" id="variaveis">
+      <span class="etiqueta">Etapa 1 &middot; Variáveis</span>
+      <h2>Caixas com nome</h2>
+      <p>Uma variável guarda <strong>um</strong> valor. Quando a turma escrever o código,
+        o resultado aparece aqui:</p>
+      <pre class="saida" id="saida1">— aguardando o JavaScript —</pre>
+    </section>
+
+    <!-- ETAPA: ARRAYS -->
+    <section class="bloco" id="arrays">
+      <span class="etiqueta">Etapa 2 &middot; Arrays</span>
+      <h2>Uma variável, vários valores</h2>
+      <p>Um array guarda vários itens em posições numeradas que <strong>começam no zero</strong>.</p>
+      <ol class="posicoes" aria-hidden="true">
+        <li><span>Ana</span><small>índice 0</small></li>
+        <li><span>Bruno</span><small>índice 1</small></li>
+        <li><span>Carla</span><small>índice 2</small></li>
+        <li><span>Diego</span><small>índice 3</small></li>
+      </ol>
+      <pre class="saida" id="saida2">— aguardando o JavaScript —</pre>
+    </section>
+
+    <!-- ETAPA: OPERAÇÕES -->
+    <section class="bloco" id="operacoes">
+      <span class="etiqueta">Etapa 3 &middot; Operações</span>
+      <h2>Adicionar, trocar e remover</h2>
+      <p>Mexendo no array com <code>push</code>, troca por índice e <code>pop</code>:</p>
+      <pre class="saida" id="saida3">— aguardando o JavaScript —</pre>
+    </section>
+
+    <!-- ETAPA: REPETIÇÃO -->
+    <section class="bloco" id="repeticao">
+      <span class="etiqueta">Etapa 4 &middot; Repetição</span>
+      <h2>Percorrer o array com <code>for</code></h2>
+      <p>Visitar cada posição, uma por vez, sem repetir código:</p>
+      <pre class="saida" id="saida4">— aguardando o JavaScript —</pre>
+    </section>
+
+    <!-- ETAPA: PROJETO -->
+    <section class="bloco destaque" id="projeto">
+      <span class="etiqueta">Etapa 5 &middot; Projeto</span>
+      <h2>Lista de tarefas</h2>
+      <p>Aqui a lógica (JS) encontra a vitrine (HTML/CSS): cada tarefa entra no array
+        com <code>push</code> e a lista é redesenhada percorrendo o array.</p>
+
+      <!-- FORMULÁRIO: elemento semântico para entrada de dados -->
+      <form id="form-tarefa" class="form-tarefa">
+        <label for="campo">Nova tarefa</label>
+        <input type="text" id="campo" name="campo" placeholder="Ex: estudar arrays" autocomplete="off">
+        <button type="submit">＋ Adicionar</button>
+        <button type="button" id="btn-limpar" class="secundario">Limpar</button>
+      </form>
+
+      <p class="contador" id="contador">Nenhuma tarefa ainda.</p>
+
+      <!-- LISTA: o JavaScript vai preencher os <li> aqui dentro -->
+      <ul id="lista" class="lista"></ul>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    Material de apoio &mdash; Lógica de Programação e Arrays &middot; Senac Largo Treze
+  </footer>
+
+  <!-- O JavaScript (lógica) é a última coisa a carregar: -->
+  <script src="script.js"></script>
+</body>
+</html>
